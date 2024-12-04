@@ -19,8 +19,6 @@ Entre as principais funções estão:
 
 DAX
 
-![ref1]Copy code
-
 Vendas\_Filtradas = CALCULATE(SUM(FactSales[SalesAmount]), DimDate[Year] = 2024)  
 
 Explicação: Soma o total de vendas apenas para o ano de 2024.
@@ -29,7 +27,6 @@ Explicação: Soma o total de vendas apenas para o ano de 2024.
 
 DAX
 
-![ref1]Copy code
 
 Percentual = DIVIDE(SUM(FactSales[SalesAmount]), SUM(FactSales[TotalAmount]), 0)  
 
@@ -39,7 +36,6 @@ Explicação: Calcula o percentual de vendas, retornando 0 em caso de divisões 
 
 DAX
 
-![ref1]Copy code
 
 Status = IF(SUM(FactSales[SalesAmount]) > 100000, "Meta Atingida", "Abaixo da Meta")  
 
